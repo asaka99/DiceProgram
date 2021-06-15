@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイコロプログラム</title>
+</head>
+<body>
+    <input type="button" id="dice" value="サイコロを振る" onclick="dice()"><br>
+    <img src="" id="image">
+
+    <p id = "dice2"></p><!--<img src="img/1.png" width="100" height="100">-->
+
+        <script>
+            function dice() {
+                // console.log('dice関数が呼ばれました');
+                // var random = Math.random() * 6;
+                // console.log(random);
+                // var floor = Math.floor(random);
+                // console.log(floor);
+                var sai = Math.floor(Math.random() * 6) + 1;
+                console.log(sai);
+                
+                document.getElementById('image').src = 'img/' + sai + '.png';
+                
+            }
+            
+        </script>
+</body>
+</html>
